@@ -17,19 +17,32 @@
         p{
             background-color: blueviolet;
             padding: 30px;
-            height: 300px;
+            height: 100px;
         }
         a{
             color: white;
         }
+        h3{
+            background-color: chocolate;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
-    <h1>Lavanya</h1>
+    <h1>Merge Sort</h1>
     <a href="./index.html">click me</a>
-    <h2>About me</h2>
-    <p>I am a student of Vedic degree college<br>
-    Department BCA</p>
+    <p>Merge sort is a popular sorting algorithm known for its efficiency and stability. It follows the Divide and Conquer approach. It works by recursively dividing the input array into two halves, recursively sorting the two halves and finally merging them back together to obtain the sorted array.</p>
+    <h2>How Merge Sort Works</h2>
+    <ul>
+        <li>Divide: The unsorted list is recursively split into two halves until each sublist contains only a single element. A list with one element is considered sorted by definition (the base case for recursion).
+</li>
+<li>Conquer: Each of the single-element subproblems is "solved" (they are already sorted).</li>
+<li>Combine (Merge): The sorted sublists are repeatedly merged back together to form new, larger sorted lists. This process continues until the entire list is merged into a single sorted output.</li>
+</ul>
+<h3>Time Complexity</h3>
+<p> It has a consistent time complexity of O(n log n) for the best, average, and worst cases. This makes it more efficient for large datasets than algorithms with a worst-case time of O(n²), such as insertion sort or bubble sort.</p>
+<h3>Space Complexity</h3>
+<p>Standard implementations are generally not in-place and require O(n) additional auxiliary space to hold the temporary arrays during the merge process.
+</p>
 </body>
-
 </html>
